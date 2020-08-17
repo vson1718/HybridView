@@ -1,2 +1,6 @@
+include ':hybrid'
+include ':usecenter'
+include ':common'
+include ':framwork'
 include ':app'
 rootProject.name = "HybridWebView"

@@ -1,16 +1,14 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.vson.hybrid"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -20,24 +18,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-    dataBinding {
-        enabled true
-    }
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "androidx.appcompat:appcompat:$rootProject.androidXVersion"
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    api "androidx.appcompat:appcompat:$rootProject.androidXVersion"
+    api 'com.kingja.loadsir:loadsir:1.3.6'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
+    api 'com.google.code.gson:gson:2.8.5'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
-    annotationProcessor rootProject.googleAutoServiceDependency
-    implementation rootProject.googleAutoServiceDependency
-
-    implementation project(":usecenter")
-    implementation project(":hybrid")
 
 }
