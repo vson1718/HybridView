@@ -62,7 +62,7 @@ hybrid.takeNativeActionWithCallback = function(commandName, parameters, callback
 ### [](https://github.com/vson1718/HybridView)License
 
 ```
-Copyright (C)  menxindiaolong, FlyTour Framework Open Source Project
+Copyright (C)  vson, FlyTour Framework Open Source Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
