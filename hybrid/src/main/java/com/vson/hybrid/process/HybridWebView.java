@@ -43,9 +43,9 @@ public class HybridWebView extends WebView {
 
 
     public void init() {
-//        WebViewProcessCommandDispatcher.getInstance().initAidlConnection();
+        WebViewCommandDispatcher.getInstance().initAidlConnection();
         WebViewDefaultSettings.getInstance().setSettings(this);
-        addJavascriptInterface(this, "hybrid");
+        addJavascriptInterface(this, "hybridWebView");
     }
 
     public void registerWebViewCallBack(WebViewCallBack webViewCallBack) {
@@ -59,7 +59,7 @@ public class HybridWebView extends WebView {
         if (!TextUtils.isEmpty(jsParam)) {
             final JsParam jsParamObject = new Gson().fromJson(jsParam, JsParam.class);
             if (jsParamObject != null) {
-//                WebViewProcessCommandDispatcher.getInstance().executeCommand(jsParamObject.name, new Gson().toJson(jsParamObject.param), this);
+                WebViewCommandDispatcher.getInstance().executeCommand(jsParamObject.name, new Gson().toJson(jsParamObject.param), this);
             }
         }
     }

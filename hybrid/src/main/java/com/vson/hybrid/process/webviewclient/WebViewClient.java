@@ -47,4 +47,14 @@ public class WebViewClient extends android.webkit.WebViewClient {
             Log.e(TAG, "WebViewCallBack is null.");
         }
     }
+
+    @Override
+    public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+        return super.shouldOverrideUrlLoading(view, request);
+    }
+
+    @Override
+    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+        return super.shouldOverrideUrlLoading(view, url);
+    }
 }
