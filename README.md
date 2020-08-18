@@ -2,7 +2,7 @@
 # HybridView
 
 ##一个跨进程通信的WebView组件，基于命令模式实现Native和WebView通信
-[](https://github.com/vson1718/HybridView/blob/master/1597736314299043.mp4)
+<img src='screenshots/list_demo.gif' height=444 width=250 />
 ###Android 端只需要实现command接口即可自定义指令
 ~~~
 @AutoService({Command.class})
