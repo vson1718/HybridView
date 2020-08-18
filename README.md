@@ -55,8 +55,8 @@ hybrid.takeNativeActionWithCallback = function(commandName, parameters, callback
 ### 关于作者
 
 ```
-    name : "vson",
-    简书 : "[https://www.jianshu.com/u/b8d32d868a2b](https://www.jianshu.com/u/b8d32d868a2b)"
+    name : vson,
+    简书 : [https://www.jianshu.com/u/b8d32d868a2b](https://www.jianshu.com/u/b8d32d868a2b)
 ```
 
 ### [](https://github.com/vson1718/HybridView)License
