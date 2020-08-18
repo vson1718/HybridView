@@ -1,8 +1,8 @@
 
 # HybridView
+<img src='screenshots/list_demo.gif' height=444 width=250 />
 
 ##一个跨进程通信的WebView组件，基于命令模式实现Native和WebView通信
-<img src='screenshots/list_demo.gif' height=444 width=250 />
 ###Android 端只需要实现command接口即可自定义指令
 ~~~
 @AutoService({Command.class})
